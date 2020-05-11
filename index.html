@@ -1,26 +1,80 @@
 <!doctype html>
 <html class="" lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Week 5, Part 2</title>
+  <title>Week 5, Part 2 - Silly Story Generator</title>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Another uxWill Project</a>
+  </nav>
 
-    <h1>Week 5, Part 2</h1>
+  <main role="main">
 
-	</body>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Welcome to Make-A-Story!</h1>
+        <p id="intro-text">Ever felt the need to write your own stories? To become a world-renowned author of a best seller? Well, this isn't the place for that, but it is a place to express your creative juices and come up with your own silly story. With the help of the StoryMaker2000, you just make a few selections and watch your creation come to life. Give it a try!</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Step 1: Name</h2>
+          <p>Start with a name, any name. Could be your own, your hamster's name, or the name of that one guy who lives down the street.</p>
+          <div>
+            <label for="customname">Enter custom name:</label>
+            <input id="customname" type="text" placeholder="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h2>Step 2: Measurement</h2>
+          <p>Metric or Imperial, or even InterGalactic. Pick your poison.</p>
+          <div class="measure">
+            <label for="us">US</label><input id="us" type="radio" name="ukusig" value="us" checked>
+            <label for="uk">UK</label><input id="uk" type="radio" name="ukusig" value="uk">
+            <label for="ig">IG</label><input id="ig" type="radio" name="ukusig" value="ig">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h2>Step 3: Vacation</h2>
+          <p>What's your idea of the perfect getaway spot? Choose and see where the story takes you.</p>
+          <div class="vacation">
+            <label for="vacation"> Pick a vacation:</label>
+            <select id="vacation">
+              <option value="beach">Beach</option>
+              <option value="mountain">Mountain</option>
+              <option value="country">Country-Side</option>
+              <option value="space">Outter Space</option>
+            </select>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="randomize">Generate random story</button>
+      </div>
+      <p class="story"></p>
+      <hr>
+    </div> <!-- /container -->
+
+  </main>
+
+  <footer class="container">
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
 
 </html>
