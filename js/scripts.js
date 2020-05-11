@@ -47,7 +47,10 @@ if(document.getElementById("ig").checked) {
   newStory = newStory.replace('94 fahrenheit', igtemperature);
 }
 
-
+if(customVacation.value !== '') {
+    let vacation = customVacation.value;
+    newStory = newStory.replace('vacation', vacation);
+  }
 
   story.textContent = newStory;
   story.style.visibility = 'visible';
