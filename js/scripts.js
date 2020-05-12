@@ -1,7 +1,7 @@
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
-const customVacation = document.getElementById('.vacation');
+const customVacation = document.getElementById('vacation');
 
 function randomValueFromArray(array){
   const random = Math.floor(Math.random()*array.length);
